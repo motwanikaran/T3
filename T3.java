@@ -18,5 +18,4 @@ public class T3 {
       StartActivity ob = new StartActivity();
        ob.setVisible(true);
     }
-    
 }
