@@ -36,6 +36,8 @@ public class MainActivity extends javax.swing.JFrame {
  || ((a[0][0] == 1) && (a[1][1] == 1) && (a[2][2] == 1)) || ((a[0][2] == 1) && (a[1][1] == 1) && (a[2][0] == 1)))    
  {
     jLabel3.setText("Player 1 wins!");
+     jLabel2.setText("Player 1 Turn");
+     count=0;
     jButton1.setEnabled(true);
     jButton3.setEnabled(true);
     jButton4.setEnabled(true);
@@ -55,7 +57,7 @@ public class MainActivity extends javax.swing.JFrame {
     jButton8.setText("");
     jButton9.setText("");
     jButton10.setText("");
-    count=0;
+    
     for(int i=0; i<3;i++)
             for(int j=0; j<3; j++)
              a[i][j]=0;
@@ -66,6 +68,8 @@ public class MainActivity extends javax.swing.JFrame {
  || ((a[0][0] == 2) && (a[1][1] == 2) && (a[2][2] == 2)) || ((a[0][2] == 2) && (a[1][1] == 2) && (a[2][0] == 2)))    
  {
     jLabel3.setText("Player 2 wins!");
+     jLabel2.setText("Player 1 Turn");
+     count=0;
     jButton1.setEnabled(true);
     jButton3.setEnabled(true);
     jButton4.setEnabled(true);
@@ -85,7 +89,7 @@ public class MainActivity extends javax.swing.JFrame {
     jButton8.setText("");
     jButton9.setText("");
     jButton10.setText("");
-    count=0;
+    
     for(int i=0; i<3;i++)
             for(int j=0; j<3; j++)
              a[i][j]=0;
@@ -95,7 +99,8 @@ public class MainActivity extends javax.swing.JFrame {
        if(count>=9)
        {
            jLabel3.setText("It's a Draw!");
-       jButton1.setEnabled(true);
+      jLabel2.setText("Player 1 Turn");
+      jButton1.setEnabled(true);
     jButton3.setEnabled(true);
     jButton4.setEnabled(true);
     jButton5.setEnabled(true);
@@ -124,7 +129,7 @@ public class MainActivity extends javax.swing.JFrame {
   
   
   @SuppressWarnings("unchecked")
-    // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
+    // <editor-fold defaultstate="collapsed" desc="Generated Code">                          
     private void initComponents() {
 
         jLabel1 = new javax.swing.JLabel();
@@ -268,9 +273,9 @@ public class MainActivity extends javax.swing.JFrame {
         );
 
         pack();
-    }// </editor-fold>//GEN-END:initComponents
+    }// </editor-fold>                        
 
-    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {                                         
         if(jButton1.getText().equals(""))
         {
             if(count%2==0)
@@ -288,9 +293,9 @@ public class MainActivity extends javax.swing.JFrame {
             a[0][0]=2;
         Calculate();
         Draw();
-    }//GEN-LAST:event_jButton1ActionPerformed
+    }                                        
         
-    private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
+    private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {                                         
         if(jButton3.getText().equals(""))
         {
             if(count%2==0)
@@ -308,9 +313,9 @@ public class MainActivity extends javax.swing.JFrame {
             a[0][1]=2;
          Calculate();
          Draw();
-    }//GEN-LAST:event_jButton3ActionPerformed
+    }                                        
 
-    private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
+    private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {                                         
         if(jButton4.getText().equals(""))
         {
             if(count%2==0)
@@ -328,9 +333,9 @@ public class MainActivity extends javax.swing.JFrame {
             a[0][2]=2;
          Calculate();
          Draw();
-    }//GEN-LAST:event_jButton4ActionPerformed
+    }                                        
 
-    private void jButton5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton5ActionPerformed
+    private void jButton5ActionPerformed(java.awt.event.ActionEvent evt) {                                         
         if(jButton5.getText().equals(""))
         {
             if(count%2==0)
@@ -348,9 +353,9 @@ public class MainActivity extends javax.swing.JFrame {
             a[1][0]=2;
  Calculate();
  Draw();
-    }//GEN-LAST:event_jButton5ActionPerformed
+    }                                        
 
-    private void jButton6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton6ActionPerformed
+    private void jButton6ActionPerformed(java.awt.event.ActionEvent evt) {                                         
         if(jButton6.getText().equals(""))
         {
             if(count%2==0)
@@ -368,9 +373,9 @@ public class MainActivity extends javax.swing.JFrame {
             a[1][1]=2;
          Calculate();
          Draw();
-    }//GEN-LAST:event_jButton6ActionPerformed
+    }                                        
 
-    private void jButton7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton7ActionPerformed
+    private void jButton7ActionPerformed(java.awt.event.ActionEvent evt) {                                         
         if(jButton7.getText().equals(""))
         {
             if(count%2==0)
@@ -388,9 +393,9 @@ public class MainActivity extends javax.swing.JFrame {
             a[1][2]=2;
 Calculate();
 Draw();// TODO add your handling code here:
-    }//GEN-LAST:event_jButton7ActionPerformed
+    }                                        
 
-    private void jButton8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton8ActionPerformed
+    private void jButton8ActionPerformed(java.awt.event.ActionEvent evt) {                                         
         if(jButton8.getText().equals(""))
         {
             if(count%2==0)
@@ -408,9 +413,9 @@ Draw();// TODO add your handling code here:
             a[2][0]=2;
 Calculate();
 Draw();// TODO add your handling code here:
-    }//GEN-LAST:event_jButton8ActionPerformed
+    }                                        
 
-    private void jButton9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton9ActionPerformed
+    private void jButton9ActionPerformed(java.awt.event.ActionEvent evt) {                                         
         if(jButton9.getText().equals(""))
         {
             if(count%2==0)
@@ -428,9 +433,9 @@ Draw();// TODO add your handling code here:
             a[2][1]=2;
 Calculate();
 Draw();// TODO add your handling code here:
-    }//GEN-LAST:event_jButton9ActionPerformed
+    }                                        
 
-    private void jButton10ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton10ActionPerformed
+    private void jButton10ActionPerformed(java.awt.event.ActionEvent evt) {                                          
         if(jButton10.getText().equals(""))
         {
             if(count%2==0)
@@ -448,7 +453,7 @@ Draw();// TODO add your handling code here:
             a[2][2]=2;
 Calculate();
 Draw();// TODO add your handling code here:
-    }//GEN-LAST:event_jButton10ActionPerformed
+    }                                         
 
     /**
      * @param args the command line arguments
@@ -480,12 +485,12 @@ Draw();// TODO add your handling code here:
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new MainActivity().setVisible(true);
+                
             }
         });
     }
 
-    // Variables declaration - do not modify//GEN-BEGIN:variables
+    // Variables declaration - do not modify                     
     private javax.swing.JButton jButton1;
     private javax.swing.JButton jButton10;
     private javax.swing.JButton jButton3;
@@ -498,5 +503,5 @@ Draw();// TODO add your handling code here:
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
-    // End of variables declaration//GEN-END:variables
+    // End of variables declaration                   
 }
